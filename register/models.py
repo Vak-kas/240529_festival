@@ -2,6 +2,7 @@ from django.db import models
 
 # Create your models here.
 class User(models.Model):
+    id = models.AutoField(primary_key=True)
     nickname = models.CharField(unique = True,max_length=20) #닉네임
     age = models.IntegerField() #나이
     instagram_id = models.CharField(unique = True,max_length = 50) #인스타 아이디
