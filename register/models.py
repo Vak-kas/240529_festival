@@ -11,5 +11,10 @@ class User(models.Model):
     hobby = models.CharField(max_length=50) #취미 또는 성격
     gender = models.CharField(max_length=1, choices=[("M", "Male"), ("F", "Female")])  # 성별(M, F 중에 고를 것)
 
+    #ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ#
+    # 학생회비 관리
+    name = models.CharField(max_length = 10) #이름
+    created_time = models.DateTimeField(auto_now_add=True)  # 생성 시각
+
 
 
