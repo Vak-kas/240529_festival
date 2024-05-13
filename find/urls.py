@@ -1,10 +1,6 @@
-from django.urls import path, include
-from rest_framework.routers import DefaultRouter
+from django.urls import path
+from .views import VisitorAPIView
 
-# 라우터 생성
-
-
-# URLConf
 urlpatterns = [
-    path('user', views.index),
+    path('visitors/', VisitorAPIView.as_view(), name='visitor_api'),
 ]

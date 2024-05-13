@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     "register.apps.RegisterConfig",
     "rest_framework",
     'corsheaders',
+    "find.apps.FindConfig",
 ]
 
 MIDDLEWARE = [
