@@ -10,7 +10,7 @@ class Visitor(models.Model):
     age = models.IntegerField()
     #ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ#
     # 추가옵션
-    keyword = models.CharField(max_length=50) #검색어 입력
+    keyword = models.CharField(max_length=50, blank=True, null=True) #검색어 입력
     type = models.CharField(max_length=1, choices=[("A", "all"), ("O", "opposite")])
 
     #ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ#
